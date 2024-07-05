@@ -1,0 +1,202 @@
+[
+    {
+        "lembak": "Uma",
+        "indo": "Rumah",
+        "contohkalimat": [
+            {
+                "lembak": "Mela busik kuma ku",
+                "indo": "Ayo main ke rumah saya"
+            }
+        ]
+    },
+    {
+        "lembak": "Tido",
+        "indo": "Tidur",
+        "contohkalimat": [
+            {
+                "lembak": "Nak tido segal",
+                "indo": "Mau tidur sebentar"
+            }
+        ]
+    },
+    {
+        "lembak": "Segal",
+        "indo": "Sebentar",
+        "contohkalimat": [
+            {
+                "lembak": "Segal lagi aku ulang tahun",
+                "indo": "Sebentar lagi aku ulang tahun"
+            }
+        ]
+    },
+    {
+        "lembak": "Nak",
+        "indo": "Mau",
+        "contohkalimat": [
+            {
+                "lembak": "Nak kemane nga?",
+                "indo": "Mau kemana kamu?"
+            }
+        ]
+    },
+    {
+        "lembak": "Nga",
+        "indo": "Kamu",
+        "contohkalimat": [
+            {
+                "lembak": "Nga nak makan col?",
+                "indo": "Kamu mau makan ga?"
+            }
+        ]
+    },
+    {
+        "lembak": "Col",
+        "indo": "Tidak",
+        "contohkalimat": [
+            {
+                "lembak": "Col ngape makan disikak",
+                "indo": "Tidak apa-apa makan disini"
+            }
+        ]
+    },
+    {
+        "lembak": "Mane",
+        "indo": "Mana",
+        "contohkalimat": [
+            {
+                "lembak": "Nga nak ke mane?",
+                "indo": "Kamu mau ke mana?"
+            }
+        ]
+    },
+    {
+        "lembak": "Busik",
+        "indo": "Main",
+        "contohkalimat": [
+            {
+                "lembak": "Nga nak busik dimane?",
+                "indo": "Kamu mau main di mana?"
+            }
+        ]
+    },
+    {
+        "lembak": "Mela",
+        "indo": "Ayo",
+        "contohkalimat": [
+            {
+                "lembak": "Mela kita jalan-jalan",
+                "indo": "Ayo kita jalan-jalan"
+            }
+        ]
+    },
+    {
+        "lembak": "Aku",
+        "indo": "Saya",
+        "contohkalimat": [
+            {
+                "lembak": "Ku lagi biajo",
+                "indo": "Saya sedang belajar"
+            }
+        ]
+    },
+    {
+        "lembak": "Disikak",
+        "indo": "Disini",
+        "contohkalimat": [
+            {
+                "lembak": "Nak duduk disikak?",
+                "indo": "Mau duduk di sini?"
+            }
+        ]
+    },
+    {
+        "lembak": "Kemane",
+        "indo": "Kemana",
+        "contohkalimat": [
+            {
+                "lembak": "Kemane nga sekarang?",
+                "indo": "Kemana kamu sekarang?"
+            }
+        ]
+    },
+    {
+        "lembak": "Lagi",
+        "indo": "Lagi",
+        "contohkalimat": [
+            {
+                "lembak": "Ku lagi makan",
+                "indo": "Saya lagi makan"
+            }
+        ]
+    },
+    {
+        "lembak": "Biajo",
+        "indo": "Belajar",
+        "contohkalimat": [
+            {
+                "lembak": "Nak biajo ape?",
+                "indo": "Mau belajar apa?"
+            }
+        ]
+    },
+    {
+        "lembak": "Ape",
+        "indo": "Apa",
+        "contohkalimat": [
+            {
+                "lembak": "Ape kak?",
+                "indo": "Apa ini?"
+            }
+        ]
+    },
+    {
+        "lembak": "Dimane",
+        "indo": "Dimana",
+        "contohkalimat": [
+            {
+                "lembak": "Uma nga dimane?",
+                "indo": "Rumah kamu dimana?"
+            }
+        ]
+    },
+    {
+        "lembak": "Duduk",
+        "indo": "Duduk",
+        "contohkalimat": [
+            {
+                "lembak": "Nga nak duduk dimane?",
+                "indo": "Kamu mau duduk dimana?"
+            }
+        ]
+    },
+    {
+        "lembak": "ngelong",
+        "indo": "Jalan-jalan",
+        "contohkalimat": [
+            {
+                "lembak": "Mela kita ngelong",
+                "indo": "Ayo kita jalan-jalan"
+            }
+        ]
+    },
+    {
+        "lembak": "Makan",
+        "indo": "Makan",
+        "contohkalimat": [
+            {
+                "lembak": "Nga nak makan col?",
+                "indo": "Kamu mau makan ga?"
+            }
+        ]
+    },
+    {
+        "lembak": "kini",
+        "indo": "Sekarang",
+        "contohkalimat": [
+            {
+                "lembak": "Nga nak kemane kini?",
+                "indo": "Kamu mau kemana sekarang?"
+            }
+        ]
+    }
+]
