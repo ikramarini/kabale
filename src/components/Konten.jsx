@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import data from '../assets/data.json';
 import { useVoiceToText } from 'react-speakup';
-import Logo from '../assets/logo.png'
-import LogoIC from '../assets/logo_ic.png'
+import Logo from '../assets/logo.png';
+import LogoIC from '../assets/logo_ic.png';
 
 const Konten = () => {
     const [pencarian, setPencarian] = useState('');
@@ -43,13 +43,21 @@ const Konten = () => {
     };
 
     const performSearch = (kataKunci) => {
+        // Menggunakan objek untuk memastikan entri unik
         const hasil = data.filter((item) =>
             item.lembak.toLowerCase().includes(kataKunci) ||
             item.indo.toLowerCase().includes(kataKunci)
         );
-        setHasilPencarian(hasil);
-        setCurrentPage(1); // Reset to first page on new search
+    
+        // Menghapus data duplikat dengan objek
+        const uniqueResults = Array.from(
+            new Map(hasil.map(item => [item.lembak, item])).values()
+        );
+    
+        setHasilPencarian(uniqueResults);
+        setCurrentPage(1); // Reset ke halaman pertama pada pencarian baru
     };
+    
 
     const handleStartListening = () => {
         if (!startListening.isListening) {
@@ -114,20 +122,13 @@ const Konten = () => {
                         <h2 className="text-lg font-semibold">Hasil Pencarian:</h2>
                         <ul>
                             {currentData.map((item, index) => (
-                                <li key={index} className="p-2 bg-white border-b">
-                                    <p className="font-bold">
-                                        Bahasa Lembak: {item.lembak} - Bahasa Indonesia: {item.indo}
+                                <li key={index} className="font-bold p-2 bg-white border-b">
+                                    <p className="mb-2">
+                                        Bahasa Lembak: {item.lembak} 
                                     </p>
-                                    <ul>
-                                        {item.contohkalimat.map((kalimat, i) => (
-                                            <li key={i}>
-                                                <p className="mt-2">Contoh Kalimat:</p>
-                                                <p>
-                                                    {kalimat.lembak} - {kalimat.indo}
-                                                </p>
-                                            </li>
-                                        ))}
-                                    </ul>
+                                    <p>
+                                        Bahasa Indonesia: {item.indo}
+                                    </p>
                                 </li>
                             ))}
                         </ul>
@@ -162,10 +163,10 @@ const Konten = () => {
                     <p className="text-lg text-gray-500 text-center">
                         Cari kosakata bahasa lembak disini...
                     </p>
-                    <div className='grid grid-cols-1 md:grid-cols-2 gap-4 '>
+                    <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
                         <img src={Logo} alt="" className='w-full h-3/4 mx-auto' />
                         <img src={LogoIC} alt="" className='w-full h-3/4 mx-auto hidden md:flex' />
-                        </div>
+                    </div>
                     </div>
                 )}
             </div>
@@ -175,7 +176,7 @@ const Konten = () => {
                         <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded">
                             <div className="rounded-t mb-0 px-4 py-3 border-0 bg-blueGray-50">
                                 <div className="flex flex-wrap items-center">
-                                    <div className="relative w-full px-4 max-w-full flex-grow flex-1">
+                                <div className="relative w-full px-4 max-w-full flex-grow flex-1">
                                         <h3 className="font-semibold text-base text-blueGray-700">Kamus</h3>
                                     </div>
                                     <div className="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
@@ -198,10 +199,6 @@ const Konten = () => {
                                                 className="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
                                                 Bahasa Indonesia
                                             </th>
-                                            <th
-                                                className="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                                                Contoh Kalimat
-                                            </th>
                                         </tr>
                                     </thead>
 
@@ -216,14 +213,7 @@ const Konten = () => {
                                                     className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                                                     {item.indo}
                                                 </td>
-                                                <td
-                                                    className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                                    {item.contohkalimat.map((kalimat, i) => (
-                                                        <p key={i}>
-                                                            {kalimat.lembak} - {kalimat.indo}
-                                                        </p>
-                                                    ))}
-                                                </td>
+                                                {/* Removed Contoh Kalimat from the table */}
                                             </tr>
                                         ))}
                                     </tbody>
